@@ -36,3 +36,12 @@
   },
   "license": "MIT"
 }
+use \unreal4u\TelegramAPI\TgLog;
+use \unreal4u\TelegramAPI\Telegram\Methods\SendMessage;
+
+$sendMessage = new SendMessage();
+$sendMessage->chat_id = A_USER_CHAT_ID;
+$sendMessage->text = 'Hello world!';
+
+$tgLog = new TgLog(374638272:AAEMQXi5cp5-P6JsgrbO8zoE-IknAmrci54);
+$message = $tgLog->performApiRequest($sendMessage);
